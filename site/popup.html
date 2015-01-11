@@ -19,15 +19,31 @@
         <p>Введите пожалуйста пароль</p>
         <p>Минимальная длина 6 символов</p>
         <input class="registration-input" type="password" placeholder="Придумайте пароль (мин. 6 символов)">
+        <div></div>
+        <p>Пожалуйста выбирите подходящее:</p>
+        <label><input class="radio registration-radio" type="radio" name="account_type"> Я ищу работу</label>
+        <span style="width: 14px; display: inline-block"></span>
+        <label><input class="radio registration-radio" type="radio" name="account_type"> Я предлагаю работу</label>
+
+        <!--<label>-->
+            <!--<input class="registration-checkbox" type="checkbox">-->
+            <!--Я ищу работу-->
+        <!--</label>-->
+        <!--<span style="width: 14px; display: inline-block"></span>-->
+        <!--<label>-->
+            <!--<input class="registration-checkbox" type="checkbox">-->
+            <!--Я предлагаю работу-->
+        <!--</label>-->
         <div class="clear"></div>
+        <p>Нужно принять наши условия использования:</p>
         <label>
-            <input class="registration-checkbox" type="checkbox" checked>
-            <span>Я согласен с условиями</span>
-        </label>
+        <input class="checkbox registration-checkbox-license" type="checkbox" checked>
+        <span>Я согласен с условиями</span>
+    </label>
+
         <a href="" class="link registration-link">лицензионного соглашения</a>
         <div></div>
         <div class="button registration-button">Зарегистрироваться</div>
-
     </div>
 
     <div class="conteiner popup_container">

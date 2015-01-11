@@ -264,12 +264,19 @@ h1, h2, h3, h4, p{margin: 0; padding: 0;}
 
 }
 
-.enter-checkbox, .registration-checkbox{
+.registration-checkbox-license{
     height: 14px;
     width: 14px;
+    margin: 8px 0 0 0;
+}
+.registration-checkbox{
+    height: 18px;
+    width: 18px;
     margin: 18px 0 0 0;
 }
 
+
+.registration-radio{height: 18px; width: 18px; margin: 10px 0 0 0}
 
 
 
@@ -288,6 +295,7 @@ label {
     /*display: block;*/
     /*padding-left: 15px;*/
     /*text-indent: -15px;*/
+    cursor: pointer;
 }
 
 input{
@@ -303,6 +311,9 @@ input{
     overflow: hidden;
 
 }
+
+.radio{cursor: pointer;}
+.checkbox{cursor: pointer;}
 
 .index_serch input{
     height: 40px;
