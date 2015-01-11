@@ -244,6 +244,11 @@ h1, h2, h3, h4, p{margin: 0; padding: 0;}
     .popup_container span{font-size: 12px;}
     .popup_container p{font-size: 14px; color: red; margin: 10px 0;}
 
+.reg-conteiner{
+    background-image: url("../img/fireworks.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
 /*----------/CONTEINERS-------------------------------------------------------------------------------*/
 
 
