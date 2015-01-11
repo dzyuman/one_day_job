@@ -3,17 +3,47 @@
 <head>
     <title>Попап</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body>
+<body style="background: #07527e">
 
-<div class="registration">
 
-    <img src="img/bg_main.jpg">
+
+
     <div class="conteiner popup_container">
-ghmghmfghmfghmgf hgfm hfgh dgf df gh fd gh df g hf
+        <div class="button_close-m">X</div>
+        <p>Введите пожалуйста email</p>
+        <p>Введите пожалуйста корректный email</p>
+        <input class="registration-input" type="email" placeholder="Введите Ваш email" autofocus>
+        <div class="clear" style="margin-top: 20px;"></div>
+        <p>Введите пожалуйста пароль</p>
+        <p>Минимальная длина 6 символов</p>
+        <input class="registration-input" type="password" placeholder="Придумайте пароль (мин. 6 символов)">
+        <div class="clear"></div>
+        <label>
+            <input class="registration-checkbox" type="checkbox" checked>
+            <span>Я согласен с условиями</span>
+        </label>
+        <a href="" class="link registration-link">лицензионного соглашения</a>
+        <div></div>
+        <div class="button registration-button">Зарегистрироваться</div>
+
     </div>
-    <div class="popup-bg"></div>
-</div>
+
+    <div class="conteiner popup_container">
+        <div class="button_close-m">X</div>
+        <p>Неправильно введен логин или пароль</p>
+        <input class="enter-input" type="email" placeholder="Введите Ваш email" autofocus>
+        <div class="clear" style="margin-top: 20px;"></div>
+        <input class="enter-input" type="password" placeholder="Введите пароль">
+        <div class="clear"></div>
+        <a href="" class="link enter-link">Забыли пароль?</a>
+        <div class="clear"></div>
+        <div class="button enter-button">Войти</div>
+
+    </div>
+
+
 
 </body>
 </html>

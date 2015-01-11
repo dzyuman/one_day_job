@@ -9,9 +9,9 @@
 
 
 
-body, html {margin: 0; padding: 0; background-color: #fff; font-family: 'Roboto', sans-serif; color: #333}
+body, html {margin: 0; padding: 0; background-color: #fff; font-family: 'Roboto', sans-serif; color: #333; height: 100%; width: 100%;}
 a{text-decoration: none;}
-h1, h2, h3, h4{margin: 0; padding: 0;}
+h1, h2, h3, h4, p{margin: 0; padding: 0;}
 .clear{clear: both;}
 .content{width: 100%; text-align: center;}
 
@@ -112,7 +112,7 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
 /*--------BUTTONS----------------------------------------------------------------------------------------*/
 .button{
     color: #333;
-    border: 2px solid #076899;
+
     padding: 9px 18px;
     font-size: 14px;
     font-weight: 700;
@@ -122,9 +122,25 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
     cursor: pointer;
 }
 
+.enter-button, .registration-button{
+    background: #076899;
+    color: #fff;
+    height: 46px;
+    width: 321px;
+    padding: 0;
+    text-align: center;
+    line-height: 46px;
+    margin: 20px 0 0 0;
+
+}
+
+.enter-button:hover, .registration-button:hover{
+    background-color: #0782b5;
+}
 .nav-button{
     float: right;
     margin: 20px 0 0 0;
+    border: 2px solid #076899;
 }
 
 .nav-button:hover{
@@ -141,6 +157,7 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
     font-size: 18px;
     margin: 0 10px;
     color: #fff;
+
 }
 
 .button-top-main:hover{
@@ -149,6 +166,19 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
     /*-o-transition:all      3s ease;*/
     /*-moz-transition:all    3s ease;*/
 }
+
+.button_close-m{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    /*background: red;*/
+    text-align: right;
+
+}
+.button_close-m:hover{font-weight: 700;}
 
 /*--------/BUTTONS-------------------------------------------------------------------------------------*/
 
@@ -159,14 +189,13 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
 
 /*--------LINKS----------------------------------------------------------------------------------------*/
 
-.link{padding: 9px 18px;
+.link{
     font-weight: 700;
-    color: #333;
+    color: #07527e;
     cursor: pointer;
 }
 
 .link:hover{
-    color: #07527e;
     text-decoration: underline;
     -webkit-transition:all 0.5s ease;
     -o-transition:     all 0.5s ease;
@@ -175,6 +204,12 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
 .nav-link{
     float: right;
     margin: 20px 30px 0 0;
+    color: #333;
+    padding: 9px 18px;
+}
+
+.enter-link, .registration-link{
+    font-size: 12px;
 }
 
 /*--------/LINKS--------------------------------------------------------------------------------------*/
@@ -195,6 +230,8 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
     border: 1px solid #dedede;
     border-radius: 2px;
     clear: both;
+    background: #fff;
+    position: relative;
 }
 
 .advert-conteiner{
@@ -202,9 +239,10 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
 }
 
 .popup_container{
-    z-index: 1100;
-
+    padding: 50px;
 }
+    .popup_container span{font-size: 12px;}
+    .popup_container p{font-size: 14px; color: red; margin: 10px 0;}
 
 /*----------/CONTEINERS-------------------------------------------------------------------------------*/
 
@@ -216,15 +254,26 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
 
 /*----------     REGISTRATION ENTER      -------------------------------------------------------------------------------*/
 
-.popup-bg{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: 0.8;
-    display: block;
-    z-index: ;
+.enter-input, .registration-input{
+    height: 30px;
+    width: 305px;
+    font-weight: 700;
+    font-size: 15px;
+    /*letter-spacing: 1px;*/
+    /*margin: 15px 0 0 0;*/
+
 }
+
+.enter-checkbox, .registration-checkbox{
+    height: 14px;
+    width: 14px;
+    margin: 18px 0 0 0;
+}
+
+
+
+
+
 
 /*----------     /REGISTRATION ENTER      -------------------------------------------------------------------------------*/
 
@@ -235,9 +284,24 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
 
 /*----------   FORMS   -------------------------------------------------------------------------------*/
 
-.input{
+label {
+    /*display: block;*/
+    /*padding-left: 15px;*/
+    /*text-indent: -15px;*/
+}
+
+input{
     background-color: #dedede;
     border: 0;
+    padding:8px;
+
+
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    overflow: hidden;
+
 }
 
 .index_serch input{
@@ -245,6 +309,8 @@ h1, h2, h3, h4{margin: 0; padding: 0;}
     width: 970px;
     padding: 0 15px;
 }
+
+
 
 
 .jq-selectbox__select {
